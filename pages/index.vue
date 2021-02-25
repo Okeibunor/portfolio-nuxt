@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">portfolio-nuxt</h1>
-      <div>Homepage for Favour Okeibunor's Portfolio</div>
+      <h1 class="title">My Name is Okeibunor Favour. I'm a 10x Dev</h1>
     </div>
   </div>
 </template>
