@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <spacer :width="4" :height="3.8" />
+    <spacer :width="4" :height="3" />
     <div class="hero-medium-container">
       <img src="~/assets/images/hand.svg" alt="hand" class="wave" />
       <span class="hero-text">
@@ -14,8 +14,25 @@
         />
       </span>
     </div>
-    <spacer :width="4" :height="2" />
-    <p class="hero-small-container type-effect">Fullstack Web Developer</p>
+    <spacer :width="4" :height="3" />
+    <vue-typer
+      :text="[
+        'Frontend Engineer',
+        'Fullstack Web Developer',
+        'Blockchain Enthusiast',
+        'Drummer boy...',
+      ]"
+      :repeat="Infinity"
+      :shuffle="false"
+      initial-action="typing"
+      :pre-type-delay="150"
+      :type-delay="100"
+      :pre-erase-delay="2000"
+      :erase-delay="1000"
+      erase-style="select-all"
+      :erase-on-complete="false"
+      caret-animation="blink"
+    ></vue-typer>
     <spacer :width="4" :height="3" />
     <div class="btn-group">
       <buttons
@@ -31,6 +48,8 @@
         title="Projects"
       />
     </div>
+    <spacer :width="1" :height="3.7" />
+    <img src="~/assets/images/waves.svg" alt="" />
   </div>
 </template>
 
@@ -73,12 +92,6 @@ export default {
   font-size: 4.7rem;
   line-height: 5.2rem;
   position: relative;
-}
-
-.hero-small-container {
-  font-size: 3.05rem;
-  line-height: 5rem;
-  color: #2d9cdb;
 }
 
 .concave {

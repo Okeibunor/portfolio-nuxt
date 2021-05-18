@@ -37,7 +37,7 @@ $button-color: #2d9cdb;
 }
 .navbar-items {
   display: flex;
-  width: 45%;
+  width: 44%;
   justify-content: space-between;
   align-items: center;
 
