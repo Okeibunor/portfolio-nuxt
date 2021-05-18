@@ -2,11 +2,11 @@
   <nav class="navbar">
     <img src="@/assets/images/logo.svg" alt="logo" />
     <ul class="navbar-items">
-      <li class="active">Home</li>
-      <li>About Me</li>
-      <li>Portfolio</li>
-      <li>Resume</li>
-      <li>Mentorship</li>
+      <NuxtLink class="navbar-link" to="/">Home</NuxtLink>
+      <NuxtLink class="navbar-link" to="/about">About Me</NuxtLink>
+      <NuxtLink class="navbar-link" to="/portfolio">Portfolio</NuxtLink>
+      <NuxtLink class="navbar-link" to="/resume">Resume</NuxtLink>
+      <NuxtLink class="navbar-link" to="/mentor">Mentorship</NuxtLink>
     </ul>
     <buttons
       image="monkeyemoji"
@@ -42,16 +42,15 @@ $button-color: #2d9cdb;
   justify-content: space-between;
   align-items: center;
 
-  li {
+  .navbar-link {
     list-style-type: none;
     font-size: 1.4rem;
-
-    &.active {
-      color: $font-colored;
-      &::after {
-        content: "";
-      }
-    }
+    text-decoration: none;
+    color: black;
   }
+}
+
+.nuxt-link-exact-active {
+  color: $font-colored !important;
 }
 </style>
