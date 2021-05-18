@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="container">
     <Navbar />
-    <p class="hero-vertical-container">Okeibunor Favour</p>
-
+    <!-- <p class="hero-vertical-container">Okeibunor Favour</p> -->
+    <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-left" />
+    <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-right" />
     <hero />
   </div>
 </template>
@@ -20,6 +21,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.container
+  position: relative
+
 .hero-vertical-container
   display: flex
   align-items: center
@@ -33,4 +37,14 @@ export default {
   z-index: 1
   text-transform: uppercase
   position: absolute
+
+.dots
+  position: absolute
+  bottom: 0
+
+.dots-right
+  right: 0
+
+.dots-left
+  left: 0
 </style>
