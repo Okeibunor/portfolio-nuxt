@@ -49,7 +49,7 @@
       />
     </div>
     <spacer :width="1" :height="3.7" />
-    <img style="width: 84.3%" src="~/assets/images/waves.svg" alt="" />
+    <img style="width: 84%" src="~/assets/images/waves.svg" alt="" />
   </div>
 </template>
 

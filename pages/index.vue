@@ -41,10 +41,13 @@ export default {
 .dots
   position: absolute
   bottom: 0
+  width: 8rem
 
 .dots-right
   right: 0
+  bottom: 2rem
 
 .dots-left
   left: 0
+  bottom: 7rem
 </style>
