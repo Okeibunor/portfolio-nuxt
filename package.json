@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"
   },

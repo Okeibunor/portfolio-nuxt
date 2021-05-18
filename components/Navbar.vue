@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <img src="@/assets/images/logo.svg" alt="" />
+    <img src="@/assets/images/logo.svg" alt="logo" />
     <ul class="navbar-items">
       <li class="active">Home</li>
       <li>About Me</li>
@@ -8,15 +8,19 @@
       <li>Resume</li>
       <li>Mentorship</li>
     </ul>
-    <button class="btn">
-      Talk to Me
-      <img src="@/assets/images/monkeyemoji.svg" alt="" />
-    </button>
+    <buttons
+      image="monkeyemoji"
+      color="white"
+      background="#2d9cdb"
+      title="Talk to Me"
+    />
   </nav>
 </template>
 
 <script>
+import buttonBlue from "./buttons.vue";
 export default {
+  components: { buttonBlue },
   name: "Navbar",
 };
 </script>
@@ -29,8 +33,7 @@ $button-color: #2d9cdb;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 5vh auto;
-  font-size: 1.5rem;
+  margin: 3.5vh auto;
 }
 .navbar-items {
   display: flex;
@@ -40,6 +43,8 @@ $button-color: #2d9cdb;
 
   li {
     list-style-type: none;
+    font-size: 1.4rem;
+
     &.active {
       color: $font-colored;
       &::after {
@@ -47,9 +52,5 @@ $button-color: #2d9cdb;
       }
     }
   }
-}
-.btn img {
-  vertical-align: middle;
-  margin: auto 0 auto 0.4rem;
 }
 </style>
