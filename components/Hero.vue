@@ -20,7 +20,7 @@
         'Frontend Engineer',
         'Fullstack Web Developer',
         'Blockchain Enthusiast',
-        'Drummer boy...',
+        'Jazz Drummer...',
       ]"
       :repeat="Infinity"
       :shuffle="false"

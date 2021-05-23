@@ -1,10 +1,11 @@
 <template>
   <div class="container">
-    <Navbar />
+    <!-- <Navbar /> -->
     <!-- <p class="hero-vertical-container">Okeibunor Favour</p> -->
-    <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-left" />
-    <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-right" />
-    <hero />
+    <!-- <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-left" /> -->
+    <!-- <img src="~/assets/images/dots.svg" alt="dots" class="dots dots-right" /> -->
+    <!-- <hero /> -->
+    Working on it ...
   </div>
 </template>
 

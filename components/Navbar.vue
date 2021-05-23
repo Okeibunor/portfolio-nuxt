@@ -52,5 +52,12 @@ $button-color: #2d9cdb;
 
 .nuxt-link-exact-active {
   color: $font-colored !important;
+  position: relative;
+  &::after {
+    content: url("~assets/images/arrow.svg");
+    position: absolute;
+    top: 1.3rem;
+    left: 1.6rem;
+  }
 }
 </style>
